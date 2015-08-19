@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify public/app.jsx -o public/bundle.js",
     "start": "node server.js"
   },
   "author": "petehunt",
@@ -13,6 +14,17 @@
     "email": "jason@jasonstudstill.com"
   }],
   "license": "ISC",
+  "devDependencies": {
+    "browserify": "^11.0.1",
+    "react": "^0.13.3",
+    "reactify": "^1.1.1",
+    "superagent": "^1.3.0"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  },
   "dependencies": {
     "body-parser": "^1.13.3",
     "express": "^4.13.3"
