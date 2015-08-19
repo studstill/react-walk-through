@@ -1,0 +1,20 @@
+{
+  "name": "react-tutorial",
+  "version": "0.1.0",
+  "description": "Code from React tutorial",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "petehunt",
+  "contributors": [{
+    "name": "Jason Studstill",
+    "email": "jason@jasonstudstill.com"
+  }],
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3"
+  }
+}
